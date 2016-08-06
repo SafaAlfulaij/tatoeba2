@@ -39,10 +39,19 @@
 }
 
 .removeTagFromSentenceButton {
+    color: red;
+}
+
+html[dir="ltr"] .removeTagFromSentenceButton {
     border-left: 1px dotted #CCC;
     padding-left: 5px;
     margin-left: 5px;
-    color: red;
+}
+
+html[dir="rtl"] .removeTagFromSentenceButton {
+    border-right: 1px dotted #CCC;
+    padding-right: 5px;
+    margin-right: 5px;
 }
 
 .numSentences {

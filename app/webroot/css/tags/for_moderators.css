@@ -26,8 +26,16 @@
     border: 1px solid #CCC;
     padding: 1px;
     width: 150px;
+}
+
+html[dir="ltr"] .workloadWrapper {
     margin-right: 10px;
     float: left;
+}
+
+html[dir="rtl"] .workloadWrapper {
+    margin-left: 10px;
+    float: right;
 }
 
 .workload {

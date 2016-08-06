@@ -23,8 +23,12 @@
     font-size: 16px;
 }
 
-.form .buttons {
+html[dir="ltr"] .form .buttons {
     text-align: right;
+}
+
+html[dir="rtl"] .form .buttons {
+    text-align: left;
 }
 
 .form input.button {
@@ -42,6 +46,10 @@
     padding: 0;
 }
 
-.form label {
+html[dir="ltr"] .form label {
     margin-right: 10px;
+}
+
+html[dir="rtl"] .form label {
+    margin-left: 10px;
 }

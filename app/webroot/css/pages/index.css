@@ -42,8 +42,12 @@
     color: #656565;
 }
 
-.lastWallMessages .link {
+html[dir="ltr"] .lastWallMessages .link {
     text-align: right;
+}
+
+html[dir="rtl"] .lastWallMessages .link {
+    text-align: left;
 }
 
 
@@ -78,9 +82,17 @@
 }
 
 #new-search-bar #SentenceQuery {
-    padding: 5px 40px 5px 10px;
     width: 800px;
+}
+
+html[dir="ltr"] #new-search-bar #SentenceQuery {
+    padding: 5px 40px 5px 10px;
     margin-left: -4px;
+}
+
+html[dir="rtl"] #new-search-bar #SentenceQuery {
+    padding: 5px 10px 5px 40px;
+    margin-right: -4px;
 }
 
 #new-search-bar #clearSearch {
@@ -89,9 +101,16 @@
     cursor: pointer;
     color: #CCCCCC;
     position: absolute;
-    right: 5px;
     font-size: 24px;
     line-height: 46px;
+}
+
+html[dir="ltr"] #new-search-bar #clearSearch {
+    right: 5px;
+}
+
+html[dir="rtl"] #new-search-bar #clearSearch {
+    left: 5px;
 }
 
 #new-search-bar .search-input,
@@ -125,8 +144,12 @@
     color: #000000;
 }
 
-#new-search-bar .advanced-search {
+html[dir="ltr"] #new-search-bar .advanced-search {
     float: right;
+}
+
+html[dir="rtl"] #new-search-bar .advanced-search {
+    float: left;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */

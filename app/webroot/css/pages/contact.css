@@ -24,15 +24,25 @@
     font-size: 1.4em;
 }
 
-.twitterLink {
+html[dir="ltr"] .twitterLink,
+html[dir="ltr"] .bloggerLink,
+html[dir="ltr"] .facebookLink {
     padding: 7px 0 7px 40px;
+}
+
+html[dir="rtl"] .twitterLink,
+html[dir="rtl"] .bloggerLink,
+html[dir="rtl"] .facebookLink {
+    padding: 7px 40px 7px 0;
+}
+
+.twitterLink {
     margin: 20px;
     background: transparent url(/img/twitter_icon.svg) no-repeat scroll left;
     display: block;
 }
 
 .bloggerLink {
-    padding: 7px 0 7px 40px;
     margin: 20px;
     background: transparent url(/img/blogger_icon.svg) no-repeat scroll left;
     display: block;

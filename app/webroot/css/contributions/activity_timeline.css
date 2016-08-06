@@ -36,6 +36,10 @@
     padding: 0 10px;
 }
 
+html[dir="rtl"] #timeline .date {
+    text-align: left;
+}
+
 #timeline .number {
     text-align: center;
     padding: 0 10px;
@@ -44,15 +48,30 @@
     font-weight: bold;
 }
 
+html[dir="ltr"] #timeline .number {
+    border-right: 1px solid #767676;
+}
+
+html[dir="rtl"] #timeline .number {
+    border-left: 1px solid #767676;
+}
+
 #timeline .bar {
     width: 100%;
 }
 
 #timeline .logs_stats {
     height: 10px;
-    border-left: none;
     background: #4caf50;
     opacity: 0.4;
+}
+
+html[dir="ltr"] #timeline .logs_stats {
+    border-left: none;
+}
+
+html[dir="rtl"] #timeline .logs_stats {
+    border-right: none;
 }
 
 .daily-average {

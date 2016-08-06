@@ -21,3 +21,11 @@
     color: #aaaaaa;
     margin-left: 5px;
 }
+
+html[dir="rtl"] .sentence.deleted {
+    margin-left: 5px;
+}
+
+html[dir="rtl"] .sentence.deleted {
+    margin-right: 5px;
+}

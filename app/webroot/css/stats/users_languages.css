@@ -47,5 +47,12 @@
     height: 100%;
     width: 100%;
     font-size: 12px;
+}
+
+html[dir="ltr"] .usersLanguagesStats .languageLevel .unknownLevel {
     float: left;
+}
+
+html[dir="rtl"] .usersLanguagesStats .languageLevel .unknownLevel {
+    float: right;
 }

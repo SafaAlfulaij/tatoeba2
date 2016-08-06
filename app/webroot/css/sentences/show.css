@@ -52,10 +52,19 @@
 }
 
 .removeTagFromSentenceButton {
+    color: red;
+}
+
+html[dir="ltr"] .removeTagFromSentenceButton {
     border-left: 1px dotted #CCC;
     padding-left: 5px;
     margin-left: 5px;
-    color: red;
+}
+
+html[dir="rtl"] .removeTagFromSentenceButton {
+    border-right: 1px dotted #CCC;
+    padding-right: 5px;
+    margin-right: 5px;
 }
 
 
@@ -75,22 +84,40 @@
     background: #4caf50;
     color: #FFFFFF;
     border: none;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
     height: 25px;
     width: 25px;
     font-size: 16px;
     font-weight: bold;
-    margin-left: -24px;
     cursor: pointer;
+}
+
+html[dir="ltr"] #TagAddTagPostForm button[type="submit"] {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: -24px;
+}
+
+html[dir="rtl"] #TagAddTagPostForm button[type="submit"] {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right: -24px;
 }
 
 #TagAddTagPostForm input {
     border: 1px solid #cccccc;
-    padding: 2px 25px 2px 2px;
     font-size: 16px;
+}
+
+html[dir="ltr"] #TagAddTagPostForm input {
+    padding: 2px 25px 2px 2px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+html[dir="rtl"] #TagAddTagPostForm input {
+    padding: 2px 2px 2px 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 #TagTagName {
@@ -105,28 +132,52 @@
 .tags-loader {
     width: 12px;
     height: 12px;
-    margin-left: 5px;
     display: inline-block;
     vertical-align: middle;
+}
+
+html[dir="ltr"] .tags-loader {
+    margin-left: 5px;
+}
+
+html[dir="rtl"] .tags-loader {
+    margin-right: 5px;
 }
 
 
 /*
  * Sentence correctness form
  */
-#SentenceEditCorrectnessForm .radio label {
+html[dir="ltr"] #SentenceEditCorrectnessForm .radio label {
     margin-right: 20px;
 }
 
+html[dir="rtl"] #SentenceEditCorrectnessForm .radio label {
+    margin-left: 20px;
+}
 
 #annexe_content .sentence-lists .public-list {
     list-style-type: disc;
+}
+
+html[dir"ltr"] #annexe_content .sentence-lists .public-list {
     margin: 5px 5px 5px 10px;
+}
+
+html[dir"rtl"] #annexe_content .sentence-lists .public-list {
+    margin: 5px 10px 5px 5px;
 }
 
 #annexe_content .sentence-lists .personal-list {
     list-style-type: circle;
+}
+
+html[dir"ltr"] #annexe_content .sentence-lists .personal-list {
     margin: 5px 5px 5px 10px;
+}
+
+html[dir"rtl"] #annexe_content .sentence-lists .personal-list {
+    margin: 5px 10px 5px 5px;
 }
 
 
@@ -137,5 +188,14 @@
 .correctness-info svg {
     display: inline-block;
     vertical-align: middle;
+}
+
+html[dir="ltr"] .correctness-info .username,
+html[dir="ltr"] .correctness-info svg {
     margin: 0 2px 5px 0;
+}
+
+html[dir="rtl"] .correctness-info .username,
+html[dir="rtl"] .correctness-info svg {
+    margin: 0 0 5px 2px;
 }

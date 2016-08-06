@@ -31,7 +31,14 @@
 #files-detected td {
     border: 1px dotted;
     padding: 1px 5px;
+}
+
+html[dir="ltr"] #files-detected td {
     text-align: right;
+}
+
+html[dir="rtl"] #files-detected td {
+    text-align: left;
 }
 
 #files-detected tr.even {

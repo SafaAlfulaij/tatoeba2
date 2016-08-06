@@ -25,7 +25,8 @@
  */
 ?>
 <!DOCTYPE html>
-<html lang="<?php echo LanguagesLib::languageTag(Configure::read('Config.language')); ?>">
+<html lang="<?php echo LanguagesLib::languageTag(Configure::read('Config.language')); ?>"
+      dir="<?php echo LanguagesLib::getLanguageDirection(Configure::read('Config.language')); ?>" />
 <head>
     <?php echo $html->charset(); ?>
     <title>

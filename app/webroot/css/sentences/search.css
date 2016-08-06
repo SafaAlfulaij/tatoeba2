@@ -57,15 +57,27 @@ legend {
     font-size: 15px;
 }
 
-#AdvancedSearchSearchForm {
+html[dir="ltr"] #AdvancedSearchSearchForm {
     text-align: right;
 }
 
+html[dir="rtl"] #AdvancedSearchSearchForm {
+    text-align: left;
+}
+
 #AdvancedSearchSearchForm label:first-child {
-    padding-right: 5px;
-    text-align: right;
     width: 110px;
     display: inline-block;
+}
+
+html[dir="ltr"] #AdvancedSearchSearchForm label:first-child {
+    padding-right: 5px;
+    text-align: right;
+}
+
+html[dir="rtl"] #AdvancedSearchSearchForm label:first-child {
+    padding-left: 5px;
+    text-align: left;
 }
 
 #AdvancedSearchSearchForm input {
@@ -78,11 +90,20 @@ legend {
     width: 50%;
 }
 
-#AdvancedSearchSearchForm input:first-child {
+html[dir="ltr"] #AdvancedSearchSearchForm input:first-child {
     margin-left: 100px;
 }
-#AdvancedSearchSearchForm div.note {
+
+html[dir="rtl"] #AdvancedSearchSearchForm input:first-child {
+    margin-right: 100px;
+}
+
+html[dir="ltr"] #AdvancedSearchSearchForm div.note {
     margin-left: 118px;
+}
+
+html[dir="rtl"] #AdvancedSearchSearchForm div.note {
+    margin-right: 118px;
 }
 
 #AdvancedSearchSearchForm .input {
@@ -91,15 +112,29 @@ legend {
 
 .note {
     font-size: 85%;
+}
+
+html[dir="ltr"] .note {
     margin-left: 5px;
 }
 
+html[dir="rtl"] .note {
+    margin-right: 5px;
+}
+
 #AdvancedSearchSearchForm fieldset {
-    text-align: left;
     border: 1px solid #DDD;
     vertical-align: top;
     width: 260px;
     margin-bottom: 10px;
+}
+
+html[dir="ltr"] #AdvancedSearchSearchForm fieldset {
+    text-align: left;
+}
+
+html[dir="rtl"] #AdvancedSearchSearchForm fieldset {
+    text-align: right;
 }
 
 #AdvancedSearchFrom,

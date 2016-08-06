@@ -29,7 +29,18 @@
 .adding-new-sentence-in-list {
     display: inline-block;
     vertical-align: bottom;
+}
+
+html[dir="ltr"] #newSentenceInList .submit,
+html[dir="ltr"] #newSentenceInList .input,
+html[dir="ltr"] .adding-new-sentence-in-list {
     margin-right: 5px;
+}
+
+html[dir="rtl"] #newSentenceInList .submit,
+html[dir="rtl"] #newSentenceInList .input,
+html[dir="rtl"] .adding-new-sentence-in-list {
+    margin-left: 5px;
 }
 
 #newSentenceInList .input {
@@ -53,8 +64,15 @@
 }
 
 .sentenceInList .removeFromList {
-    float: right;
     margin: 8px 10px 0px 10px;
+}
+
+html[dir="ltr"] .sentenceInList .removeFromList {
+    float: right;
+}
+
+html[dir="rtl"] .sentenceInList .removeFromList {
+    float: left;
 }
 
 .sentencesListActions li {
@@ -89,9 +107,15 @@
     margin: 3px 10px;
     color: #4caf50;
     border: 1px solid #4caf50;
-    padding: 5px 4px 2px 5px;
     border-radius: 15px;
+}
 
+html[dir="ltr"] .edit-list-name {
+    padding: 5px 4px 2px 5px;
+}
+
+html[dir="rtl"] .edit-list-name {
+    padding: 5px 5px 2px 4px;
 }
 
 .edit-list-name-form {

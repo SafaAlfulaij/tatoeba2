@@ -36,8 +36,12 @@
     padding-bottom: 20px;
 }
 
-#profile .info {
+html[dir="ltr"] #profile .info {
     padding-left: 20px;
+}
+
+html[dir="rtl"] #profile .info {
+    padding-right: 20px;
 }
 
 #profile .personal-info {
@@ -46,9 +50,16 @@
 
 #profile .label {
     font-weight: bold;
-    padding-right: 20px;
     color: #9e9e9e;
     text-transform: uppercase;
+}
+
+html[dir="ltr"] #profile .label {
+    padding-right: 20px;
+}
+
+html[dir="rtl"] #profile .label {
+    padding-left: 20px;
 }
 
 #profile .status {
@@ -58,7 +69,14 @@
 
 #profile .contributionsBlocked {
     background: url(../../img/warning-small.svg) no-repeat 0px center;
+}
+
+html[dir="ltr"] #profile .contributionsBlocked {
     padding-left: 20px;
+}
+
+html[dir="rtl"] #profile .contributionsBlocked {
+    padding-right: 20px;
 }
 
 /*
@@ -87,8 +105,12 @@
     height: 20px;
 }
 
-.language-icon {
+html[dir="ltr"] .language-icon {
     margin: 26px 20px 0 0;
+}
+
+html[dir="rtl"] .language-icon {
+    margin: 26px 0 0 20px;
 }
 
 .md-list-item-text {
@@ -98,11 +120,25 @@
 .md-list-item-text h3 {
     font-size: 16px;
     border: none;
+}
+
+html[dir="ltr"] .md-list-item-text h3 {
     padding-left: 0;
 }
 
+html[dir="rtl"] .md-list-item-text h3 {
+    padding-right: 0;
+}
+
 .usersLanguages .label {
-    padding-left: 20px;
     font-size: 13px;
     color: #AAAAAA;
+}
+
+html[dir="ltr"] .usersLanguages .label {
+    padding-left: 20px;
+}
+
+html[dir="rtl"] .usersLanguages .label {
+    padding-right: 20px;
 }

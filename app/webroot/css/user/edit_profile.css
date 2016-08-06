@@ -22,9 +22,18 @@
  */
 .currentPicture {
     display: inline-block;
+}
+
+html[dir="ltr"] .currentPicture {
     margin-right: 20px;
     padding-right: 20px;
     border-right: 1px solid #DDD;
+}
+
+html[dir="rtl"] .currentPicture {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #DDD;
 }
 
 .newPicture {
@@ -50,7 +59,14 @@
 #save_basicForm label {
     font-weight: bold;
     width: 100px;
+}
+
+html[dir="ltr"] #save_basicForm label {
     padding-right: 10px;
+}
+
+html[dir="rtl"] #save_basicForm label {
+    padding-left: 10px;
 }
 
 #save_basicForm .input {
@@ -85,12 +101,24 @@ textarea {
     margin: 10px 0;
 }
 
-.buttons .submit,
-.buttons .delete {
+html[dir="ltr"] .buttons .submit,
+html[dir="ltr"] .buttons .delete {
     margin-left: 0;
+}
+
+html[dir="rtl"] .buttons .submit,
+html[dir="rtl"] .buttons .delete {
+    margin-right: 0;
 }
 
 .save-button {
     margin: 10px 5px;
+}
+
+html[dir="ltr"] .save-button {
     text-align: right;
+}
+
+html[dir="rtl"] .save-button {
+    text-align: left;
 }

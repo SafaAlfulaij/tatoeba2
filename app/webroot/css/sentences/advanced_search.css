@@ -18,26 +18,50 @@
 
 @import url(search.css);
 
-fieldset#advsearch-sentences {
+html[dir="ltr"] fieldset#advsearch-sentences {
     float: left;
 }
 
-fieldset#advsearch-translations {
+html[dir="rtl"] fieldset#advsearch-sentences {
     float: right;
 }
 
-fieldset#advsearch-sort {
+html[dir="ltr"] fieldset#advsearch-translations {
+    float: right;
+}
+
+html[dir="rtl"] fieldset#advsearch-translations {
+    float: left;
+}
+
+html[dir="ltr"] fieldset#advsearch-sort {
     float: right;
     clear: right;
 }
 
+html[dir="rtl"] fieldset#advsearch-sort {
+    float: left;
+    clear: left;
+}
+
 #AdvancedSearchSearchForm button.submit {
     clear: both;
+}
+
+html[dir="ltr"] #AdvancedSearchSearchForm button.submit {
     float: right;
 }
 
-#main_content {
+html[dir="rtl"] #AdvancedSearchSearchForm button.submit {
+    float: left;
+}
+
+html[dir="ltr"] #main_content {
     margin-right: 10%;
+}
+
+html[dir="rtl"] #main_content {
+    margin-left: 10%;
 }
 
 #AdvancedSearchSearchForm fieldset {

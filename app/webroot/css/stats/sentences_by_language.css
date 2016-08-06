@@ -30,8 +30,16 @@
 
 .rank {
     width: 40px;
+}
+
+html[dir="ltr"] .rank {
     padding-right: 10px;
     text-align: right;
+}
+
+html[dir="rtl"] .rank {
+    padding-left: 10px;
+    text-align: left;
 }
 
 .icon {
@@ -66,8 +74,16 @@
 
 .languages-stats .status-warning {
     color: #AA0000;
+}
+
+html[dir="ltr"] .languages-stats .status-warning {
     margin-left: 10px;
     float: right;
+}
+
+html[dir="rtl"] .languages-stats .status-warning {
+    margin-right: 10px;
+    float: left;
 }
 
 .languages-stats .num-sentences {

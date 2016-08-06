@@ -25,8 +25,12 @@
     min-height: 150px;
 }
 
-.pm_folder th {
+html[dir="ltr"] .pm_folder th {
     text-align: left;
+}
+
+html[dir="rtl"] .pm_folder th {
+    text-align: right;
 }
 
 .messageHeader {

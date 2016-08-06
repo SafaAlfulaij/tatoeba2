@@ -33,5 +33,12 @@
 .sentence.deleted {
     font-size: 24px;
     color: #aaaaaa;
+}
+
+html[dir="ltr"] .sentence.deleted {
     margin-left: 5px;
+}
+
+html[dir="rtl"] .sentence.deleted {
+    margin-right: 5px;
 }

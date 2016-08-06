@@ -35,9 +35,17 @@
 #UserEditForm label:first-child {
     width: 180px;
     display: block;
+    padding: 5px 10px;
+}
+
+html[dir="ltr"] #UserEditForm label:first-child {
     float: left;
     text-align: right;
-    padding: 5px 10px;
+}
+
+html[dir="rtl"] #UserEditForm label:first-child {
+    float: right;
+    text-align: left;
 }
 
 #UserEditForm div.input {
@@ -51,8 +59,12 @@
     padding: 2px 4px;
 }
 
-#UserEditForm .radio label {
+html[dir="ltr"] #UserEditForm .radio label {
     margin-right: 20px;
+}
+
+html[dir="rtl"] #UserEditForm .radio label {
+    margin-left: 20px;
 }
 
 #UserEditForm div.checkbox input {

@@ -26,8 +26,15 @@
 }
 
 .sentenceInList .removeFromList {
-    float: right;
     margin: 8px 10px 0px 10px;
+}
+
+html[dir="ltr"] .sentenceInList .removeFromList {
+    float: right;
+}
+
+html[dir="rtl"] .sentenceInList .removeFromList {
+    float: left;
 }
 
 .sentencesListActions li {
