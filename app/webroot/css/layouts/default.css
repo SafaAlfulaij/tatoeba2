@@ -355,6 +355,10 @@ html[dir="rtl"] #languageSelection {
 #languageSelectionContainer,
 #user_menu {
     line-height: 48px;
+}
+
+html[dir="ltr"] #languageSelectionContainer,
+html[dir="ltr"] #user_menu {
     float: right;
 }
 

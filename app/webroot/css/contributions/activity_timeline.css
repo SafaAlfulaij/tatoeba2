@@ -31,9 +31,12 @@
 }
 
 #timeline .date {
-    text-align: right;
     color: #545454;
     padding: 0 10px;
+}
+
+html[dir="ltr"] #timeline .date {
+    text-align: right;
 }
 
 html[dir="rtl"] #timeline .date {

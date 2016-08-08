@@ -124,7 +124,7 @@ echo $html->link(
     '#',
     array(
         'class' => 'menuItem',
-        'style' => 'float:right;',
+        'style' => ($this->params['dir'] == 'ltr') ? 'float:right;' : 'float:left;',
         'onclick' => 'javascript:closeLoginForm();'
     )
 );
