@@ -633,8 +633,11 @@ html[dir="rtl"] #tatoeba {
 }
 
 #annexe_content {
-    float: right;
     width: 270px;
+}
+
+html[dir="ltr"] #annexe_content {
+    float: right;
 }
 
 html[dir="rtl"] #annexe_content {
@@ -819,18 +822,12 @@ html[dir="rtl"] .more_link {
     line-height: 25px;
 }
 
-html[dir="ltr"] #UserLoginForm_FromBar fieldset {
-    text-align: right;
-}
-
-html[dir="rtl"] #UserLoginForm_FromBar fieldset {
-    text-align: left;
-}
-
+html[dir="ltr"] #UserLoginForm_FromBar fieldset,
 html[dir="ltr"] #UserLoginForm_FromBar label {
     text-align: right;
 }
 
+html[dir="rtl"] #UserLoginForm_FromBar fieldset,
 html[dir="rtl"] #UserLoginForm_FromBar label {
     text-align: left;
 }

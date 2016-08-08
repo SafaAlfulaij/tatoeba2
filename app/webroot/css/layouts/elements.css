@@ -1412,11 +1412,13 @@ html[dir="rtl"] .transcriptions .transcription {
 .editableFlag:hover {
     cursor: pointer;
     border-top: 1px solid #AAA;
+}
+
+html[dir="ltr"] .editableFlag:hover {
     border-left: 1px solid #AAA;
 }
 
-.editableFlag:hover {
-    border-left: 0;
+html[dir="rtl"] .editableFlag:hover {
     border-right: 1px solid #AAA;
 }
 
