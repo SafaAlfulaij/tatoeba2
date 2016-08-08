@@ -124,7 +124,7 @@ echo $html->link(
     '#',
     array(
         'class' => 'menuItem',
-        'style' => ($this->params['dir'] == 'ltr') ? 'float:right;' : 'float:left;',
+        'style' => (LanguagesLib::getLanguageDirection($this->params['lang']) == 'ltr') ? 'float:right;' : 'float:left;',
         'onclick' => 'javascript:closeLoginForm();'
     )
 );
